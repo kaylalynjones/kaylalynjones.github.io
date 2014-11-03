@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
-html {
+* {
   box-sizing: border-box;
 }
 body {
@@ -12,7 +12,7 @@ body {
   background-image: url('assets/Triangles.png');
   background-repeat: none;
   background-size: cover;
-  background-position: fixed;
+  background-attachment: fixed;
 }
 body li {
   list-style: none;
@@ -49,11 +49,9 @@ a {
 }
 a:hover {
   color: #00a99d;
-  border-bottom: 2px solid #00a99d;
 }
 a:focus {
   color: #00a99d;
-  border-bottom: 2px solid #00a99d;
 }
 a:visited {
   color: #842128;
@@ -92,28 +90,73 @@ a:visited {
 }
 .row2 {
   margin-top: 100px;
-  color: #1b1b1b;
+  height: 400px;
+  color: #ffffff;
 }
 .row2 header {
   width: 100%;
   margin: 0;
   padding: 20px;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.33);
 }
 .row2 header h1 {
   margin-bottom: 0;
+  font-weight: 300;
 }
 .row2 header h4 {
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 .row3 {
-  background-color: #842128;
   color: #f2f2f2;
   overflow: hidden;
+  height: 400px;
 }
 .row3 section {
-  width: 40%;
+  width: 33.3333%;
   float: left;
-  padding: 40px 5%;
+  padding: 40px;
+  height: 400px;
+  text-align: center;
+}
+.row3 .left {
+  background-color: #842128;
+}
+.row3 .middle {
+  background-color: #4f151b;
+}
+.row3 .right {
+  background-color: #a82d32;
+}
+.row4 {
+  background-color: #e6e6e6;
+  color: #007c72;
+  text-align: center;
+  margin: 0;
+}
+.row4 h4 {
+  padding: 20px;
+  margin: 0;
+}
+footer {
+  width: 100%;
+}
+footer .social {
+  height: 200px;
+  background-color: #4f151b;
+}
+footer .social .icon {
+  color: #842128;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
+}
+footer .signature {
+  background-color: #311514;
+  text-align: center;
+  padding: 20px;
+  color: #e6e6e6;
 }

@@ -5,6 +5,7 @@ html(ng-app='portfolio', lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Kayla Lyn Jones
+    link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='public/index.css', rel='stylesheet')
   body
@@ -20,30 +21,31 @@ html(ng-app='portfolio', lang='en')
         h1 Hi, I'm Kayla Jones.
         h4 Web Designer + Developer
     .row3
-      section
-        h5 Skills
-        ul.skills
-          li 1
-          li 2
-          li 3 
-          li 4
-      section
+      section.left
+        h5 Here are some things I know
+        p LESS/SASS
+        p CSS3
+        p HTML5
+        p jQuery
+        p MEAN Stack
+      section.middle
         h5 Things that interest me
-        ul.interests
-          li 1
-          li 2
-          li 3
-          li 4
+        p User Experience
+        p Visual Design
+        p Phaser Html5 Games
+        p Illustration
+      section.right
+        h4 Check out my Resume
+        i.fa.fa-file-pdf-o.fa-5x
     .row4
       aside.mouth
-        h2 Put your money where your mouth is.
+        h4 Put your money where your mouth is.
     .row5
-      .work-tab
-        ul
-          li Node Apps
-          li MEAN Apps
-          li Mobile Apps
-          li Games
+      ul
+        li Node Apps
+        li MEAN Apps
+        li Mobile Apps
+        li Games
     main
       #container(ng-view, ng-cloak)
       <!--each ng view here linked to tabs -->
@@ -57,11 +59,18 @@ html(ng-app='portfolio', lang='en')
         h3 Enough about me, Tell me about you.
     footer
       .social
-        ul
-          li Twitter
-          li Github
-          li LinkedIn
+          .icon
+          .icon
+            a.soc-icon(href='#'): i.fa.fa-twitter.fa-5x
+          .icon
+            a.soc-icon(href='#'): i.fa.fa-github-alt.fa-5x
+          .icon
+            a.soc-icon(href='#'): i.fa.fa-linkedin.fa-5x
+          .icon
+          
+          
+          
       .signature
-        i.fa.fa-fw.fa-copyright
+        i.fa.fa-copyright &nbsp
         small Kayla Lyn Jones
     

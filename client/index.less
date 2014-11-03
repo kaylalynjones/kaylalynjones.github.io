@@ -16,8 +16,8 @@
 @black: #1b1b1b;
 
 //general-----------------------------
-html{
-  box-sizing: border-box;
+* {
+box-sizing: border-box;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -29,8 +29,7 @@ body {
   background-image: url('assets/Triangles.png');
   background-repeat: none;
   background-size: cover;
-  background-position: fixed;
-
+  background-attachment: fixed;
 
   li {
     list-style: none;
@@ -67,11 +66,11 @@ a {
 }
 a:hover {
   color: @teal;
-  border-bottom: 2px solid @teal;
+  //border-bottom: 2px solid @teal;
 }
 a:focus {
   color: @teal;
-  border-bottom: 2px solid @teal;
+  //border-bottom: 2px solid @teal;
 }
 a:visited {
   color: @medred;
@@ -117,37 +116,94 @@ a:visited {
 }
 .row2 {
   margin-top: 100px;
-
-  color: @black;
+  height: 400px;
+  color: @white;
 
   header {
     width: 100%;
     margin: 0;
     padding: 20px;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.33);
 
     h1 {
       margin-bottom: 0;
+      font-weight: @lightfont;
     }
     h4 {
       margin-top: 0;
-      font-weight: @heavyfont;
+      font-weight: @lightfont;
+      letter-spacing: 1px;
     }
   }
 }
 .row3 {
-  background-color: @medred;
+
   color:@offwhite;
   overflow: hidden;
-  section {
-    width: 40%;
-    float: left;
-    padding: 40px 5%;
+  height: 400px;
 
+  section {
+    width: 33.3333%;
+    float: left;
+    padding: 40px;
+    height: 400px;
+    text-align: center;
+  }
+  .left{
+    background-color: @medred;
+  }
+  .middle{
+    background-color: @dkred;
+  }
+  .right{
+    background-color: @red
+  }
+}
+.row4 {
+  background-color: @grey;
+  color: @dkteal;
+  text-align: center;
+  margin: 0;
+
+  h4 {
+    padding:20px;
+    margin: 0;
   }
 }
 
+.row5 {
 
-.work-tab{
+}
 
+main {
+
+}
+.row6 {
+
+}
+.row7 {
+
+}
+footer {
+  width: 100%;
+
+  .social{
+    height: 200px;
+    background-color: @dkred;
+
+    .icon {
+      color: @medred;
+      width:100%/5;
+      display: inline-block;
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+  .signature{
+    background-color: @brown;
+    text-align: center;
+    padding:20px;
+    color: @grey;
+  }
 }
