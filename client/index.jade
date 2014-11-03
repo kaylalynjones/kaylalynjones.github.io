@@ -1,6 +1,67 @@
-html
+doctype html
+html(ng-app='portfolio', lang='en')
   head
     meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title Kayla Lyn Jones
+    link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
+    link(href='public/index.css', rel='stylesheet')
   body
-    h1 This is a portfolio site!
+    .row1
+      img(src='public/assets/monogram-sml.png', alt='logo')
+      nav
+        ul
+          li: a(href='#') About
+          li: a(href='#') Work
+          li: a(href='#') Contact
+    .row2
+      header
+        h1 Hi, I'm Kayla Jones.
+        h4 Web Designer + Developer
+    .row3
+      section
+        h5 Skills
+        ul.skills
+          li 1
+          li 2
+          li 3 
+          li 4
+      section
+        h5 Things that interest me
+        ul.interests
+          li 1
+          li 2
+          li 3
+          li 4
+    .row4
+      aside.mouth
+        h2 Put your money where your mouth is.
+    .row5
+      .work-tab
+        ul
+          li Node Apps
+          li MEAN Apps
+          li Mobile Apps
+          li Games
+    main
+      #container(ng-view, ng-cloak)
+      <!--each ng view here linked to tabs -->
+    .row6
+      .game
+        aside.break
+          h3 Go ahead take a break. You deserve it.
+        .gameboard
+    .row7
+      section
+        h3 Enough about me, Tell me about you.
+    footer
+      .social
+        ul
+          li Twitter
+          li Github
+          li LinkedIn
+      .signature
+        i.fa.fa-fw.fa-copyright
+        small Kayla Lyn Jones
+    

@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
+
+//variables
+@lightfont: 300;
+@normfont: 400;
+@heavyfont: 700;
+@teal: #00A99D;
+@dkteal: #007C72;
+@red: #a82d32;
+@medred: #842128;
+@dkred: #4F151B;
+@brown: #311514;
+@white: #ffffff;
+@offwhite: #f2f2f2;
+@grey: #e6e6e6;
+@black: #1b1b1b;
+
+//general-----------------------------
+html{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  background-color: @white;
+  color: @black;
+  background-image: url('assets/Triangles.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: fixed;
+
+
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h2, h3 {
+    font-weight: @lightfont
+  }
+  h4, h5 {
+    font-weight:  @lightfont;
+  }
+  h1 {
+    font-size: 3.5em;
+    font-weight: @heavyfont;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.75em;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+}
+//link effects-------------------------------
+a {
+  color: @medred;
+}
+a:hover {
+  color: @teal;
+  border-bottom: 2px solid @teal;
+}
+a:focus {
+  color: @teal;
+  border-bottom: 2px solid @teal;
+}
+a:visited {
+  color: @medred;
+}
+
+
+
+//landing page-------------------------------
+.row1 {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  position: fixed;
+  overflow: visible;
+  background-color: @white;
+  top: 0;
+  border-bottom: 2px solid @grey;
+
+  img {
+    position: relative;
+    margin-left: 5px;
+    float: left;
+  }
+  nav {
+    width: 90%;
+    display: block;
+    float: right;
+    padding: 0 20px;
+
+    li {
+      float: right;
+      padding: 10px;
+      margin: 5px;
+
+      li a {
+        padding: 10px;
+        margin: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.row2 {
+  margin-top: 100px;
+
+  color: @black;
+
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+
+    h1 {
+      margin-bottom: 0;
+    }
+    h4 {
+      margin-top: 0;
+      font-weight: @heavyfont;
+    }
+  }
+}
+.row3 {
+  background-color: @medred;
+  color:@offwhite;
+  overflow: hidden;
+  section {
+    width: 40%;
+    float: left;
+    padding: 40px 5%;
+
+  }
+}
+
+
+.work-tab{
+
+}

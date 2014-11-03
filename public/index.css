@@ -1,0 +1,119 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  background-image: url('assets/Triangles.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: fixed;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body h2,
+body h3 {
+  font-weight: 300;
+}
+body h4,
+body h5 {
+  font-weight: 300;
+}
+body h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+body h2 {
+  font-size: 3em;
+}
+body h3 {
+  font-size: 2em;
+}
+body h4 {
+  font-size: 1.75em;
+}
+body h5 {
+  font-size: 1.5em;
+}
+a {
+  color: #842128;
+}
+a:hover {
+  color: #00a99d;
+  border-bottom: 2px solid #00a99d;
+}
+a:focus {
+  color: #00a99d;
+  border-bottom: 2px solid #00a99d;
+}
+a:visited {
+  color: #842128;
+}
+.row1 {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  position: fixed;
+  overflow: visible;
+  background-color: #ffffff;
+  top: 0;
+  border-bottom: 2px solid #e6e6e6;
+}
+.row1 img {
+  position: relative;
+  margin-left: 5px;
+  float: left;
+}
+.row1 nav {
+  width: 90%;
+  display: block;
+  float: right;
+  padding: 0 20px;
+}
+.row1 nav li {
+  float: right;
+  padding: 10px;
+  margin: 5px;
+}
+.row1 nav li li a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.row2 {
+  margin-top: 100px;
+  color: #1b1b1b;
+}
+.row2 header {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+.row2 header h1 {
+  margin-bottom: 0;
+}
+.row2 header h4 {
+  margin-top: 0;
+  font-weight: 700;
+}
+.row3 {
+  background-color: #842128;
+  color: #f2f2f2;
+  overflow: hidden;
+}
+.row3 section {
+  width: 40%;
+  float: left;
+  padding: 40px 5%;
+}
