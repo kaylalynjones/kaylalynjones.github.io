@@ -102,14 +102,16 @@ a:visited {
 
     li {
       float: right;
-      padding: 10px;
-      margin: 5px;
+      padding: 15px;
+      border-left: 1px solid @medred;
+      font-size: 18px;
 
       li a {
         padding: 10px;
         margin: 5px;
         text-decoration: none;
         font-weight: bold;
+        font-size: 18px;
       }
     }
   }
@@ -162,13 +164,14 @@ a:visited {
 }
 .row4 {
   background-color: @grey;
-  color: @dkteal;
   text-align: center;
   margin: 0;
 
-  h4 {
-    padding:20px;
-    margin: 0;
+  .icons-skill {
+    width: 100%/7;
+    color: @red;
+    display: inline-block;
+    padding: 10px;
   }
 }
 
@@ -183,7 +186,15 @@ main {
 
 }
 .row7 {
+  background-color: @medred;
+  color: @brown;
+  text-align: center;
+  margin: 0;
 
+  h4 {
+    padding:20px;
+    margin: 0;
+  }
 }
 footer {
   width: 100%;

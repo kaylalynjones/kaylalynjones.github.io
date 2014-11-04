@@ -79,14 +79,16 @@ a:visited {
 }
 .row1 nav li {
   float: right;
-  padding: 10px;
-  margin: 5px;
+  padding: 15px;
+  border-left: 1px solid #842128;
+  font-size: 18px;
 }
 .row1 nav li li a {
   padding: 10px;
   margin: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px;
 }
 .row2 {
   margin-top: 100px;
@@ -132,11 +134,22 @@ a:visited {
 }
 .row4 {
   background-color: #e6e6e6;
-  color: #007c72;
   text-align: center;
   margin: 0;
 }
-.row4 h4 {
+.row4 .icons-skill {
+  width: 14.28571429%;
+  color: #a82d32;
+  display: inline-block;
+  padding: 10px;
+}
+.row7 {
+  background-color: #842128;
+  color: #311514;
+  text-align: center;
+  margin: 0;
+}
+.row7 h4 {
   padding: 20px;
   margin: 0;
 }
