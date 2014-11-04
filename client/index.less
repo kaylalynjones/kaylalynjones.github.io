@@ -14,6 +14,7 @@
 @offwhite: #f2f2f2;
 @grey: #e6e6e6;
 @black: #1b1b1b;
+@tan: #A38D7A;
 
 //general-----------------------------
 * {
@@ -103,7 +104,7 @@ a:visited {
     li {
       float: right;
       padding: 15px;
-      border-left: 1px solid @medred;
+      border-left: 3px solid rgba(132, 33, 40, 0.85);
       font-size: 18px;
 
       li a {
@@ -183,17 +184,40 @@ main {
 
 }
 .row6 {
+  height: 600px;
 
+  .game {
+    background-color: @brown;
+    color: @tan;
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      padding: 15px;
+    }
+  }
+  .gameboard {
+    width: 60%;
+    height: 800px;
+    border: 3px solid @brown;
+    margin: 0 auto;
+    background-color: black;
+
+  }
 }
 .row7 {
   background-color: @medred;
   color: @brown;
   text-align: center;
   margin: 0;
+  height: 150px;
 
   h4 {
     padding:20px;
     margin: 0;
+  }
+  a {
+    color: @dkred;
   }
 }
 footer {
@@ -215,6 +239,6 @@ footer {
     background-color: @brown;
     text-align: center;
     padding:20px;
-    color: @grey;
+    color: @tan;
   }
 }

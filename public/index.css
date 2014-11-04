@@ -80,7 +80,7 @@ a:visited {
 .row1 nav li {
   float: right;
   padding: 15px;
-  border-left: 1px solid #842128;
+  border-left: 3px solid rgba(132, 33, 40, 0.85);
   font-size: 18px;
 }
 .row1 nav li li a {
@@ -143,15 +143,38 @@ a:visited {
   display: inline-block;
   padding: 10px;
 }
+.row6 {
+  height: 600px;
+}
+.row6 .game {
+  background-color: #311514;
+  color: #a38d7a;
+  text-align: center;
+}
+.row6 .game h3 {
+  margin: 0;
+  padding: 15px;
+}
+.row6 .gameboard {
+  width: 60%;
+  height: 800px;
+  border: 3px solid #311514;
+  margin: 0 auto;
+  background-color: black;
+}
 .row7 {
   background-color: #842128;
   color: #311514;
   text-align: center;
   margin: 0;
+  height: 150px;
 }
 .row7 h4 {
   padding: 20px;
   margin: 0;
+}
+.row7 a {
+  color: #4f151b;
 }
 footer {
   width: 100%;
@@ -171,5 +194,5 @@ footer .signature {
   background-color: #311514;
   text-align: center;
   padding: 20px;
-  color: #e6e6e6;
+  color: #a38d7a;
 }
