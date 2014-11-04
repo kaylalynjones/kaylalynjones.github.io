@@ -1,7 +1,7 @@
-var smoothScroll;
+var smoothScroll, FastClick;
 (function(){
   'use strict';
-
+  //smooth scrolling------------------------------------------------------------
   smoothScroll.init({
     speed: 500, // Integer. How fast to complete the scroll in milliseconds
     easing: 'easeInOutCubic', // Easing pattern to use
@@ -10,4 +10,8 @@ var smoothScroll;
     callbackBefore: function(toggle, anchor){}, // Function to run before scrolling
     callbackAfter: function(toggle, anchor){} // Function to run after scrolling
   });
+  //-----------------------
+  window.addEventListener('load', function(){
+    FastClick.attach(document.body);
+  }, false);
 })();

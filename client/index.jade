@@ -8,6 +8,7 @@ html(ng-app='portfolio', lang='en')
     link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='public/index.css', rel='stylesheet')
+    script(type='application/javascript', src='bower_components/fastclick/lib/fastclick.js')
   body
     .row1
       img(src='public/assets/monogram-sml.png', alt='logo')
@@ -70,16 +71,16 @@ html(ng-app='portfolio', lang='en')
     .row7
       section(id='contact')
         h4 Enough about me, let's talk.
-        a(href='#'): i.fa.fa-envelope-o.fa-3x
+        a.needsclick(href='#'): i.fa.fa-envelope-o.fa-3x
     footer
       .social
           .icon
           .icon
-            a(href='#'): i.fa.fa-twitter.fa-5x
+            a.needsclick(href='#'): i.fa.fa-twitter.fa-5x
           .icon
-            a(href='#'): i.fa.fa-github-alt.fa-5x
+            a.needsclick(href='#'): i.fa.fa-github-alt.fa-5x
           .icon
-            a(href='#'): i.fa.fa-linkedin.fa-5x
+            a.needsclick(href='#'): i.fa.fa-linkedin.fa-5x
           .icon
           
           
@@ -90,6 +91,7 @@ html(ng-app='portfolio', lang='en')
         
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
+    
     script(src='public/index.js')
 
       
