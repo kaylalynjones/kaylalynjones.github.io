@@ -11,11 +11,11 @@ html(ng-app='portfolio', lang='en')
   body
     .row1
       img(src='public/assets/monogram-sml.png', alt='logo')
-      nav
+      nav.nav-collapse(id='about')
         ul
-          li: a(href='#') About
-          li: a(href='#') Work
-          li: a(href='#') Contact
+          li: a(data-scroll href='#about') About
+          li: a(data-scroll href='#work') Work
+          li: a(data-scroll href='#contact') Contact
     .row2
       header
         h1 Hi, I'm Kayla Jones.
@@ -37,7 +37,7 @@ html(ng-app='portfolio', lang='en')
       section.right
         h4 Check out my Resume
         i.fa.fa-file-pdf-o.fa-5x
-    .row4
+    .row4(id='work')
       aside
         .icons-skill
           i.fa.fa-2x.fa-css3
@@ -68,7 +68,7 @@ html(ng-app='portfolio', lang='en')
           h3 Go ahead take a break. You deserve it.
       .gameboard
     .row7
-      section
+      section(id='contact')
         h4 Enough about me, let's talk.
         a(href='#'): i.fa.fa-envelope-o.fa-3x
     footer
@@ -87,4 +87,9 @@ html(ng-app='portfolio', lang='en')
       .signature
         i.fa.fa-copyright &nbsp
         small Kayla Lyn Jones
-    
+        
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
+    script(src='public/index.js')
+
+      
