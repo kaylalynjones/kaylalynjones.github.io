@@ -8,7 +8,7 @@ html(ng-app='portfolio', lang='en')
     link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='public/index.css', rel='stylesheet')
-    script(type='application/javascript', src='bower_components/fastclick/lib/fastclick.js')
+    
   body
     .row1
       img(src='public/assets/monogram-sml.png', alt='logo')
@@ -38,8 +38,8 @@ html(ng-app='portfolio', lang='en')
       section.right
         h4 Check out my Resume
         i.fa.fa-file-pdf-o.fa-5x
-    .row4(id='work')
-      aside
+    .row4
+      aside(id='work')
         .icons-skill
           i.fa.fa-2x.fa-css3
         .icons-skill
@@ -89,9 +89,11 @@ html(ng-app='portfolio', lang='en')
         i.fa.fa-copyright &nbsp
         small Kayla Lyn Jones
         
+    script(type='application/javascript', src='bower_components/fastclick/lib/fastclick.js')  
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
-    
+    //script(src='vendor/responsive-nav.js')
+    //script(src='vendor/fixed-responsive-nav.js')
     script(src='public/index.js')
 
       

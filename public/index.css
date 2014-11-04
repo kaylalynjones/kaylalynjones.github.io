@@ -90,6 +90,25 @@ a:visited {
   font-weight: bold;
   font-size: 18px;
 }
+.row1 nav.smaller {
+  width: 90%;
+  display: block;
+  float: right;
+  padding: 0 20px;
+}
+.row1 nav.smaller li {
+  float: right;
+  padding: 15px;
+  border-left: 3px solid rgba(132, 33, 40, 0.85);
+  font-size: 18px;
+}
+.row1 nav.smaller li li a {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
 .row2 {
   margin-top: 100px;
   height: 400px;
