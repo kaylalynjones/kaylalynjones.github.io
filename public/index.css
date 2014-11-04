@@ -143,6 +143,26 @@ a:visited {
   display: inline-block;
   padding: 10px;
 }
+.row5 {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.row5 ul {
+  display: block;
+  padding: 0 20px;
+  margin: 0;
+}
+.row5 ul li {
+  padding: 15px;
+  font-size: 18px;
+  display: inline-block;
+  font-size: 26px;
+  width: 25%;
+}
+main {
+  background-color: #f2f2f2;
+  height: 500px;
+}
 .row6 {
   height: 600px;
 }
