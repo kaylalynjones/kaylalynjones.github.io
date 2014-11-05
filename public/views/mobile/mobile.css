@@ -1,0 +1,49 @@
+.clearfix {
+  clear: both;
+}
+.mobile1,
+.mobile2,
+.mobile3 {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  float: left;
+  overflow: hidden;
+  width: 33.33333333%;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.41);
+  border-left: 1px solid #e2e2e2;
+}
+.mobile1 h4,
+.mobile2 h4,
+.mobile3 h4 {
+  font-weight: 700;
+  color: #842128;
+}
+.mobile1 img,
+.mobile2 img,
+.mobile3 img {
+  width: 300px;
+  height: 340px;
+  border: 2px solid #842128;
+}
+.mobile1 .tag,
+.mobile2 .tag,
+.mobile3 .tag {
+  font-size: 16px;
+  display: inline;
+  margin: 5px;
+  color: #A38D7A;
+}
+.mobile1 .buttons,
+.mobile2 .buttons,
+.mobile3 .buttons {
+  padding: 5px;
+}
+.mobile1 .buttons a,
+.mobile2 .buttons a,
+.mobile3 .buttons a {
+  margin: 10px;
+  width: 50%;
+  text-align: center;
+}

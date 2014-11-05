@@ -1,0 +1,49 @@
+.clearfix {
+  clear: both;
+}
+.mean1,
+.mean2,
+.mean3 {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  float: left;
+  overflow: hidden;
+  width: 33.33333333%;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.41);
+  border-left: 1px solid #e2e2e2;
+}
+.mean1 h4,
+.mean2 h4,
+.mean3 h4 {
+  font-weight: 700;
+  color: #842128;
+}
+.mean1 img,
+.mean2 img,
+.mean3 img {
+  width: 300px;
+  height: 340px;
+  border: 2px solid #842128;
+}
+.mean1 .tag,
+.mean2 .tag,
+.mean3 .tag {
+  font-size: 16px;
+  display: inline;
+  margin: 5px;
+  color: #A38D7A;
+}
+.mean1 .buttons,
+.mean2 .buttons,
+.mean3 .buttons {
+  padding: 5px;
+}
+.mean1 .buttons a,
+.mean2 .buttons a,
+.mean3 .buttons a {
+  margin: 10px;
+  width: 50%;
+  text-align: center;
+}

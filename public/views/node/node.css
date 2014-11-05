@@ -1,0 +1,49 @@
+.clearfix {
+  clear: both;
+}
+.node1,
+.node2,
+.node3 {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  float: left;
+  overflow: hidden;
+  width: 33.33333333%;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.41);
+  border-left: 1px solid #e2e2e2;
+}
+.node1 h4,
+.node2 h4,
+.node3 h4 {
+  font-weight: 700;
+  color: #842128;
+}
+.node1 img,
+.node2 img,
+.node3 img {
+  width: 300px;
+  height: 340px;
+  border: 2px solid #842128;
+}
+.node1 .tag,
+.node2 .tag,
+.node3 .tag {
+  font-size: 16px;
+  display: inline;
+  margin: 5px;
+  color: #A38D7A;
+}
+.node1 .buttons,
+.node2 .buttons,
+.node3 .buttons {
+  padding: 5px;
+}
+.node1 .buttons a,
+.node2 .buttons a,
+.node3 .buttons a {
+  margin: 10px;
+  width: 50%;
+  text-align: center;
+}
