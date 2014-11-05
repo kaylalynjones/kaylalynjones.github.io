@@ -180,11 +180,8 @@ a:visited {
 }
 main {
   background-color: #ffffff;
-  height: auto;
+  height: 625px;
   width: 100%;
-}
-main #container {
-  height: 500px;
 }
 .row6 {
   height: 600px;
