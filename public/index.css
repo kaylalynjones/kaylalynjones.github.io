@@ -179,8 +179,9 @@ a:visited {
   width: 25%;
 }
 main {
-  background-color: #f2f2f2;
-  height: 500px;
+  background-color: #ffffff;
+  height: auto;
+  width: 100%;
 }
 .row6 {
   height: 600px;

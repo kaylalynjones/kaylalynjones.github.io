@@ -3,6 +3,14 @@
 module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    connect: {
+      main: {
+        options: {
+          port: 9001,
+          base: '.'
+        }
+      }
+    },
     // ---------------------------------------------------------------------- //
     watch: {
       code: {
@@ -95,9 +103,10 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('deploy', ['clean', 'build', 'shell:bower']);
   grunt.registerTask('build', ['jshint:all', 'jscs', 'jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon']);
-  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('default', ['build', 'connect', 'watch']);
 };

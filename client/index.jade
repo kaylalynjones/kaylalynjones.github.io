@@ -8,6 +8,10 @@ html(ng-app='portfolio', lang='en')
     link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='public/index.css', rel='stylesheet')
+    link(href='public/views/games/games.css', rel='stylesheet')  
+    link(href='public/views/mobile/mobile.css', rel='stylesheet') 
+    link(href='public/views/mean/mean.css', rel='stylesheet') 
+    link(href='public/views/node/node.css', rel='stylesheet') 
     
   body
     .row1
@@ -56,18 +60,14 @@ html(ng-app='portfolio', lang='en')
           i.fa.fa-2x.fa-windows
     .row5
       ul
-        li Node Apps
-        li MEAN Apps
-        li Mobile Apps
-        li Games
+        li: a(href='#/games') Games
+        li: a(href='#/mean') MEAN Apps
+        li: a(href='#/node') Node Apps
+        li: a(href='#/mobile') Mobile Apps
+        
     main
       #container(ng-view, ng-cloak)
-      <!--each ng view here linked to tabs -->
-    .row6
-      .game
-        aside.break
-          h3 Go ahead take a break. You deserve it.
-      .gameboard
+    <!--.row6.gameaside.breakh3 Go ahead take a break. You deserve it..gameboard#gameboard -->
     .row7
       section(id='contact')
         h4 Enough about me, let's talk.
@@ -92,8 +92,14 @@ html(ng-app='portfolio', lang='en')
     script(type='application/javascript', src='bower_components/fastclick/lib/fastclick.js')  
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
+    script(src='bower_components/angular/angular.min.js')
+    script(src='bower_components/angular-route/angular-route.min.js')
     //script(src='vendor/responsive-nav.js')
     //script(src='vendor/fixed-responsive-nav.js')
     script(src='public/index.js')
+    script(src='public/views/games/games.js')
+    script(src='public/views/node/node.js')
+    script(src='public/views/mean/mean.js')
+    script(src='public/views/mobile/mobile.js')
 
       
