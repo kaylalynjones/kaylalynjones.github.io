@@ -183,6 +183,9 @@ main {
   height: auto;
   width: 100%;
 }
+main #container {
+  height: 500px;
+}
 .row6 {
   height: 600px;
 }
