@@ -179,14 +179,13 @@ a:visited {
   width: 25%;
 }
 main {
-  background-color: #00a99d;
-  background-image: url('assets/projects.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: #007c72 url('assets/projects.png') no-repeat center;
   display: block;
   margin: 0 auto;
   height: 620px;
-  width: 70%;
+}
+main #container {
+  background-color: #ffffff;
 }
 .row6 {
   height: 600px;
