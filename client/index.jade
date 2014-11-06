@@ -5,14 +5,19 @@ html(ng-app='portfolio', lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Kayla Lyn Jones
-    link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
+    link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
+    link(href='vendor/devicons.min.css', rel='stylesheet')
     link(href='public/index.css', rel='stylesheet')
     link(href='public/views/games/games.css', rel='stylesheet')  
     link(href='public/views/mobile/mobile.css', rel='stylesheet') 
     link(href='public/views/mean/mean.css', rel='stylesheet') 
-    link(href='public/views/node/node.css', rel='stylesheet') 
-    
+    link(href='public/views/node/node.css', rel='stylesheet')
+    script(src='vendor/amcharts.js')
+    script(src='vendor/pie.js')
+    script(src='vendor/amcharts.js')
+
+
   body
     .row1
       img(src='public/assets/monogram-sml.png', alt='logo')
@@ -39,6 +44,7 @@ html(ng-app='portfolio', lang='en')
         p Visual Design
         p Phaser Html5 Games
         p Illustration
+        
       section.right
         h4 Check out my Resume
         i.fa.fa-file-pdf-o.fa-5x
@@ -94,9 +100,11 @@ html(ng-app='portfolio', lang='en')
     script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
     script(src='bower_components/angular/angular.min.js')
     script(src='bower_components/angular-route/angular-route.min.js')
+    //script(src='bower_components/chartjs/Chart.min.js')
     //script(src='vendor/responsive-nav.js')
     //script(src='vendor/fixed-responsive-nav.js')
     script(src='public/index.js')
+    script(src='public/chart.js')
     script(src='public/views/games/games.js')
     script(src='public/views/node/node.js')
     script(src='public/views/mean/mean.js')
