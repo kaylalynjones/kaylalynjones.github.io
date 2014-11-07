@@ -13,6 +13,7 @@ body {
   background-repeat: none;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
 }
 body li {
   list-style: none;
@@ -326,6 +327,7 @@ a:visited {
     margin: 0 10px;
     position: relative;
     bottom: 50px;
+    cursor: pointer;
   }
   .row1 {
     width: 100%;
@@ -357,5 +359,31 @@ a:visited {
   }
   .row1 nav ul.mobile li li a {
     text-decoration: none;
+  }
+  .home-out {
+    -webkit-animation-name: fadeOut;
+  }
+  .home-in {
+    -webkit-animation-name: fadeIn;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: .2;
+      -webkit-transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+    100% {
+      opacity: .2;
+      -webkit-transform: translateY(100px);
+    }
   }
 }
