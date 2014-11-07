@@ -147,14 +147,29 @@ a:visited {
   height: 400px;
   text-align: center;
 }
+.row3 section img {
+  width: 260px;
+  height: 300px;
+}
 .row3 .left {
   background-color: #842128;
 }
 .row3 .middle {
   background-color: #4f151b;
 }
+.row3 .middle .top-half {
+  height: 200px;
+  color: #a82d32;
+}
+.row3 .middle .bottom-half {
+  height: 200px;
+  border-top: 2px solid #e6e6e6;
+}
+.row3 .middle .bottom-half h4 {
+  font-size: 25px;
+}
 .row3 .right {
-  background-color: #a82d32;
+  background-color: #842128;
 }
 .row4 {
   background-color: #e6e6e6;
