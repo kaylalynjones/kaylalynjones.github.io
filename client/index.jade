@@ -8,6 +8,7 @@ html(ng-app='portfolio', lang='en')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='vendor/devicons.min.css', rel='stylesheet')
+    //link(href='vendor/responsive-nav.css')
     link(href='public/index.css', rel='stylesheet')
     link(href='public/views/games/games.css', rel='stylesheet')  
     link(href='public/views/mobile/mobile.css', rel='stylesheet') 
@@ -16,13 +17,13 @@ html(ng-app='portfolio', lang='en')
 
 
   body
-    .row1
+    .row1.large
       img(src='public/assets/monogram-sml.png', alt='logo')
-      nav.nav-collapse(id='about')
-        ul
-          li: a(data-scroll href='#about') About
-          li: a(data-scroll href='#work') Work
-          li: a(data-scroll href='#contact') Contact
+      nav.nav.hide-desktop(id='about')
+        ul.nav-list
+          li.nav-item: a(data-scroll href='#about') About
+          li.nav-item: a(data-scroll href='#work') Work
+          li.nav-item: a(data-scroll href='#contact') Contact
     .row2
       header
         h1 Hi, I'm Kayla Jones.
@@ -62,17 +63,16 @@ html(ng-app='portfolio', lang='en')
           span.devicons.devicons-angular
         .icons-skill
           span.devicons.devicons-mongodb
-
     .row5
       ul
         li: a(href='#/games') Games
         li: a(href='#/mean') MEAN Apps
         li: a(href='#/node') Node Apps
         li: a(href='#/mobile') Mobile Apps
-        
     main
       #container(ng-view, ng-cloak)
     <!--.row6.gameaside.breakh3 Go ahead take a break. You deserve it..gameboard#gameboard -->
+
     .row7
       section(id='contact')
         h4 Enough about me, let's talk.
@@ -100,8 +100,8 @@ html(ng-app='portfolio', lang='en')
     script(src='bower_components/angular/angular.min.js')
     script(src='bower_components/angular-route/angular-route.min.js')
     //script(src='vendor/responsive-nav.js')
-    //script(src='vendor/fixed-responsive-nav.js')
     script(src='public/index.js')
+    script(src='public/shrink-nav.js')
     script(src='public/views/games/games.js')
     script(src='public/views/node/node.js')
     script(src='public/views/mean/mean.js')
