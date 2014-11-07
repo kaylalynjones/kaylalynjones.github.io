@@ -308,9 +308,14 @@ a:visited {
     background-image: url('assets/menu.png');
     background-size: contain;
     display: none;
+    margin: 0 10px;
   }
 }
 @media (max-width: 500px) {
+  .nav-list {
+    display: none;
+    margin: 0;
+  }
   .nav-mobile {
     height: 40px;
     width: 40px;
@@ -318,16 +323,23 @@ a:visited {
     display: inline;
     background-image: url('assets/menu.png');
     background-size: contain;
+    margin: 0 10px;
+    position: relative;
+    bottom: 50px;
   }
   .row1 {
     width: 100%;
-    margin-top: -10px;
+    padding-top: 10px;
     padding: 0px;
     position: fixed;
     overflow: visible;
     background-color: #ffffff;
     top: 0;
-    border-bottom: 2px solid #e6e6e6;
+    border-top: 2px solid #e6e6e6;
+  }
+  .row1 img {
+    position: relative;
+    top: 10px;
   }
   .row1 nav {
     display: block;
@@ -340,7 +352,6 @@ a:visited {
     padding: 0;
     border: none;
     font-size: 18px;
-    border-bottom: 2px solid grey;
     padding: 20px;
     margin-right: 40px;
   }
