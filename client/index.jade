@@ -33,29 +33,36 @@ html(ng-app='portfolio', lang='en')
 
       section.middle
         .top-half
-          h2 Toolbox
+          img(src='public/assets/toolbox.png')
         .bottom-half
-          h4 Check out my Resume &nbsp
-            i.fa.fa-file-pdf-o
+          span.devicons.devicons-npm
+          span.devicons.devicons-github_alt
+          span.devicons.devicons-grunt
+          span.devicons.devicons-gulp
+          span.devicons.devicons-bower
+          span.devicons.devicons-trello
         
       section.right
         img(src='public/assets/interests.png', alt='Interests')
     .row4
       aside(id='work')
         .icons-skill
-          i.fa.fa-2x.fa-css3
+          span.devicons.devicons-html5
         .icons-skill
-          i.fa.fa-2x.fa-html5
+          span.devicons.devicons-css3
         .icons-skill
-          i.fa.fa-2x.fa-git
+          span.devicons.devicons-sass
         .icons-skill
-          i.fa.fa-2x.fa-android
+          span.devicons.devicons-less
         .icons-skill
-          i.fa.fa-2x.fa-apple
+          span.devicons.devicons-javascript
         .icons-skill
-          i.fa.fa-2x.fa-linux
+          span.devicons.devicons-nodejs
         .icons-skill
-          i.fa.fa-2x.fa-windows
+          span.devicons.devicons-angular
+        .icons-skill
+          span.devicons.devicons-mongodb
+
     .row5
       ul
         li: a(href='#/games') Games

@@ -161,9 +161,19 @@ a:visited {
   height: 200px;
   color: #a82d32;
 }
+.row3 .middle .top-half img {
+  width: 345px;
+  height: 200px;
+}
 .row3 .middle .bottom-half {
   height: 200px;
-  border-top: 2px solid #e6e6e6;
+  padding-top: 40px;
+}
+.row3 .middle .bottom-half span {
+  font-size: 45px;
+  color: #a82d32;
+  display: inline-block;
+  width: 16.66666667%;
 }
 .row3 .middle .bottom-half h4 {
   font-size: 25px;
@@ -177,10 +187,11 @@ a:visited {
   margin: 0;
 }
 .row4 .icons-skill {
-  width: 14.28571429%;
+  width: 12.5%;
   color: #a82d32;
   display: inline-block;
   padding: 10px;
+  font-size: 40px;
 }
 .row5 {
   background-color: #f2f2f2;
