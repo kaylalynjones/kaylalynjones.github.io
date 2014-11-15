@@ -71,21 +71,19 @@ html(ng-app='portfolio', lang='en')
         li: a(href='#/mobile') Mobile Apps
     main
       #container(ng-view, ng-cloak)
-    <!--.row6.gameaside.breakh3 Go ahead take a break. You deserve it..gameboard#gameboard -->
-
     .row7
       section(id='contact')
         h4 Enough about me, let's talk.
-        a.needsclick(href='#'): i.fa.fa-envelope-o.fa-3x
+        a.needsclick(href='mailto:kaylalyne424@gmail.com'): i.fa.fa-envelope-o.fa-3x
     footer
       .social
           .icon
           .icon
-            a.needsclick(href='https://twitter.com/grandtraipse', target="_blank"): i.fa.fa-twitter.fa-5x
+            a.needsclick(href='https://twitter.com/grandtraipse'): i.fa.fa-twitter.fa-5x
           .icon
-            a.needsclick(href='https://medium.com/@grandtraipse', target="_blank"): i.fa.fa-bullhorn.fa-5x
+            a.needsclick(href='https://medium.com/@grandtraipse'): i.fa.fa-bullhorn.fa-5x
           .icon
-            a.needsclick(href='https://www.linkedin.com/profile/view?id=354920624&trk=nav_responsive_tab_profile_pic', target="_blank"): i.fa.fa-linkedin.fa-5x
+            a.needsclick(href='https://www.linkedin.com/profile/view?id=354920624&trk=nav_responsive_tab_profile_pic'): i.fa.fa-linkedin.fa-5x
           .icon
           
           
@@ -101,7 +99,7 @@ html(ng-app='portfolio', lang='en')
     script(src='bower_components/angular-route/angular-route.min.js')
     //script(src='vendor/responsive-nav.js')
     script(src='public/index.js')
-    script(src='public/shrink-nav.js')
+    script(src='public/nav.js')
     script(src='public/views/games/games.js')
     script(src='public/views/node/node.js')
     script(src='public/views/mean/mean.js')
