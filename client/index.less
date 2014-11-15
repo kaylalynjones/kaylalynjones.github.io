@@ -263,15 +263,29 @@ a:visited {
 
     ul {
       display: block;
-      padding: 0 20px;
+      padding: 0 20px 5px;
       margin: 0;
 
+      li:first-child {
+        width: 50px;
+        color: @medred;
+        background-color: @offwhite;
+      }
       li {
         padding: 15px;
         font-size: 18px;
         display: inline-block;
         font-size: 26px;
-        width: 100%/4;
+        width: 100%/5;
+        border-top: 5px solid @offwhite;
+      }
+      li:hover {
+        border-top: 5px solid @dkteal;
+        background-color: @white;
+      }
+      li:active {
+        border-top: 5px solid @dkteal;
+        background-color: @white;
       }
     }
   }

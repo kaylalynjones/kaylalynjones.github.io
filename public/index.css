@@ -230,15 +230,29 @@ a:visited {
   }
   .row5 ul {
     display: block;
-    padding: 0 20px;
+    padding: 0 20px 5px;
     margin: 0;
+  }
+  .row5 ul li:first-child {
+    width: 50px;
+    color: #842128;
+    background-color: #f2f2f2;
   }
   .row5 ul li {
     padding: 15px;
     font-size: 18px;
     display: inline-block;
     font-size: 26px;
-    width: 25%;
+    width: 20%;
+    border-top: 5px solid #f2f2f2;
+  }
+  .row5 ul li:hover {
+    border-top: 5px solid #007c72;
+    background-color: #ffffff;
+  }
+  .row5 ul li:active {
+    border-top: 5px solid #007c72;
+    background-color: #ffffff;
   }
   main {
     background: #007c72 url('assets/projects.png') no-repeat center;
