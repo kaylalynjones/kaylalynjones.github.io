@@ -8,12 +8,12 @@ html(ng-app='portfolio', lang='en')
     link(href='bower_components/normalize.css/normalize.css', rel='stylesheet')
     link(href='bower_components/fontawesome/css/font-awesome.min.css', rel='stylesheet')
     link(href='vendor/devicons.min.css', rel='stylesheet')
-    //link(href='vendor/responsive-nav.css')
     link(href='public/index.css', rel='stylesheet')
     link(href='public/views/games/games.css', rel='stylesheet')  
     link(href='public/views/mobile/mobile.css', rel='stylesheet') 
     link(href='public/views/mean/mean.css', rel='stylesheet') 
     link(href='public/views/node/node.css', rel='stylesheet')
+    link(href='public/components/accordion/accordion.css', rel='stylesheet')
 
 
   body
@@ -28,10 +28,20 @@ html(ng-app='portfolio', lang='en')
       header
         h1 Hi, I'm Kayla Jones.
         h4 Web Designer + Developer
+    .about
+      h4 I create beautiful digital experiences that merge functionality and design.
     .row3
       section.left
         img(src='public/assets/skills.png', alt='Skills')
-
+        .skills
+          ul
+            li Skills
+            li Html/Jade 
+            li SASS/LESS 
+            li CSS3 
+            li jQuery
+            li Javascript
+            li MEAN Stack 
       section.middle
         .top-half
           img(src='public/assets/toolbox.png')
@@ -45,8 +55,17 @@ html(ng-app='portfolio', lang='en')
         
       section.right
         img(src='public/assets/interests.png', alt='Interests')
+        .interests
+          ul
+            li Interests
+            li User Experience
+            li UI Design 
+            li Responsive Design
+            li Illustration
+            li Information Architecture
+            li Making Awesome Websites
     .row4
-      aside(id='work')
+      aside
         .icons-skill
           span.devicons.devicons-html5
         .icons-skill
@@ -63,8 +82,67 @@ html(ng-app='portfolio', lang='en')
           span.devicons.devicons-angular
         .icons-skill
           span.devicons.devicons-mongodb
-    .row5
-      ul
+    .row5(id='work')
+      .small-screen
+        hr
+        h3 Portfolio 
+        p For more info on these projects, view this page on a larger screen.
+        accordion(heading='Mean Apps')
+          h6 EnlighTN &nbsp;
+            a(href='https://github.com/kaylalynjones/enlighTN', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Explore Nashville like never before!
+          section
+            img(src='public/assets/enlighTN.png', alt='enlightn')
+          hr
+          h6 Abode &nbsp;
+            a(href='https://github.com/kaylalynjones/abode', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Manage your maintenance and renovation goals.
+          section
+            img(src='public/assets/abode.png', alt='abode')
+          //hr
+          //h6 NashvesTN
+          //p Connect with others and invest in their future.
+          //section
+            img(src='public/assets/nashvestn-desk.png', alt='nashvestn')
+        
+        accordion(heading='Node Apps')
+          h6 World Traveler &nbsp;
+            a(href='https://github.com/kaylalynjones/world-traveler', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Keep track of your world travels!
+          section
+            img(src='public/assets/world-traveler.png', alt='world traveler')
+          hr
+          h6 Hipsterbay &nbsp;
+            a(href='https://github.com/kaylalynjones/hipsterbay', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Barter for the next hot thing!  
+          section
+            img(src='public/assets/hipsterbay.png', alt='hipsterbay')     
+           
+          
+        //accordion(heading='Mobile Apps')
+          
+        accordion(heading='Phaser Games')
+          h6 Equalizer &nbsp;
+            a(href='https://github.com/kaylalynjones/equalizer', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Demolish inequalities and collect your reward!
+          
+          
+          section
+            img(src='public/assets/equalizer.png', alt='equalizer')
+          //hr
+          //h6 Journey of Oscar Diggs
+          //p Help Oscar Diggs find his ballon ride to Oz!
+            section
+              img(src='public/assets/oz.png', alt='oz')
+          hr
+          h6 Mr. Whaleface &nbsp;
+            a(href='https://github.com/kaylalynjones/mr-whaleface', target="_blank"): i.fa.fa-github-alt.fa-2x
+          p Help Mr. Whaleface navigate the dangerous sea!
+            section
+              img(src='public/assets/mr-whaleface.png', alt='mr-whaleface')
+                        
+              
+      ul.large-screen
         li: a(href='#'): i.fa.fa-crosshairs
         li: a(href='#/node') NodeJS Apps
         li: a(href='#/mean') MEAN Apps
@@ -74,7 +152,7 @@ html(ng-app='portfolio', lang='en')
       #container(ng-view, ng-cloak)
     .row7
       section(id='contact')
-        h4 Enough about me, let's talk.
+        h4 Let's talk.
         a.needsclick(href='mailto:kaylalyne424@gmail.com'): i.fa.fa-envelope-o.fa-3x
     footer
       .social
@@ -98,12 +176,10 @@ html(ng-app='portfolio', lang='en')
     script(src='bower_components/smooth-scroll/dist/js/smooth-scroll.min.js')
     script(src='bower_components/angular/angular.min.js')
     script(src='bower_components/angular-route/angular-route.min.js')
-    //script(src='vendor/responsive-nav.js')
     script(src='public/index.js')
     script(src='public/nav.js')
     script(src='public/views/games/games.js')
     script(src='public/views/node/node.js')
     script(src='public/views/mean/mean.js')
     script(src='public/views/mobile/mobile.js')
-
-      
+    script(src='public/components/accordion/accordion.js')

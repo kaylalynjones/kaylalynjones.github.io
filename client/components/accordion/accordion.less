@@ -1,0 +1,41 @@
+.accordion-heading {
+  background-color: #842128;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 2px solid #4F151B;
+  color: #e6e6e6;
+}
+
+.accordion-content {
+  //some other stuff
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
+
+  &.active {
+    display: block;
+    height: 1050px;
+  }
+  i {
+    float: right;
+  }
+  h6 {
+    font-size: 18px;
+    margin: 2px;
+    margin: 10px 15px;
+  }
+  p {
+    margin: 10px 15px;
+  }
+  img {
+    border: 2px solid #DFDEDE;
+    display: block;
+    margin: 0 auto;
+  }
+}
