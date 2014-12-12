@@ -1,9 +1,9 @@
 .clearfix {
   clear: both;
 }
-.game1,
-.game2,
-.game3 {
+.hack1,
+.hack2,
+.hack3 {
   width: 100%;
   margin: 0;
   padding: 30px;
@@ -15,36 +15,44 @@
   border-left: 1px solid #e2e2e2;
   height: 620px;
 }
-.game1 h4,
-.game2 h4,
-.game3 h4 {
+.hack1 h4,
+.hack2 h4,
+.hack3 h4 {
   font-weight: 700;
   color: #842128;
 }
-.game1 img,
-.game2 img,
-.game3 img {
+.hack1 img,
+.hack2 img,
+.hack3 img {
   width: 300px;
   height: 340px;
   border: 2px solid #DFDEDE;
 }
-.game1 .tag,
-.game2 .tag,
-.game3 .tag {
+.hack1 .tag,
+.hack2 .tag,
+.hack3 .tag {
   font-size: 16px;
   display: inline;
   margin: 5px;
   color: #A38D7A;
 }
-.game1 .buttons,
-.game2 .buttons,
-.game3 .buttons {
+.hack1 .buttons,
+.hack2 .buttons,
+.hack3 .buttons {
   padding: 5px;
 }
-.game1 .buttons a,
-.game2 .buttons a,
-.game3 .buttons a {
+.hack1 .buttons a,
+.hack2 .buttons a,
+.hack3 .buttons a {
   margin: 10px;
   width: 50%;
   text-align: center;
+}
+.hack2 h5,
+.hack2 p {
+  text-align: left;
+}
+.hack2 .final {
+  color: #007C72;
+  font-size: 25px;
 }
