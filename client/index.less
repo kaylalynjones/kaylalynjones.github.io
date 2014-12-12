@@ -126,6 +126,15 @@ a:visited {
     -webkit-transition: all 1s; /* Safari and Chrome */
     -o-transition: all 1s; /* Opera */
   }
+
+  .row1 {
+    nav {
+      .nav-list {
+        display: block !important;
+      }
+    }
+  }
+
   .row1.small {
     width: 100%;
     margin-top: -10px;
@@ -342,9 +351,11 @@ a:visited {
     h4 {
       padding:20px;
       margin: 0;
+      font-weight: bolder;
+      color: @brown;
     }
     a {
-      color: @dkred;
+      color: @brown;
     }
   }
   footer {
@@ -421,9 +432,7 @@ a:visited {
       clear: both;
       padding: 0;
 
-      ul.mobile {
-
-
+      .nav-list {
         li {
           float: none;
           padding: 0;

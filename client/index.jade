@@ -21,9 +21,10 @@ html(ng-app='portfolio', lang='en')
       img(src='public/assets/monogram-sml.png', alt='logo')
       nav.nav.hide-desktop(id='about')
         ul.nav-list
-          li.nav-item: a(data-scroll href='#about') About
-          li.nav-item: a(data-scroll href='#work') Work
-          li.nav-item: a(data-scroll href='#contact') Contact
+          li.nav-item: a(data-scroll, href='#about') About
+          li.nav-item: a(data-scroll, href='#work') Work
+          li.nav-item: a(data-scroll, href='#contact') Contact
+          li.nav-item: a(href='public/assets/kayla_jones_resume.pdf', target='_blank') Resume
     .row2
       header
         h1 Hi, I'm Kayla Jones.

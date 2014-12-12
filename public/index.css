@@ -105,6 +105,9 @@ a:visited {
     -o-transition: all 1s;
     /* Opera */
   }
+  .row1 nav .nav-list {
+    display: block !important;
+  }
   .row1.small {
     width: 100%;
     margin-top: -10px;
@@ -298,9 +301,11 @@ a:visited {
   .row7 h4 {
     padding: 20px;
     margin: 0;
+    font-weight: bolder;
+    color: #311514;
   }
   .row7 a {
-    color: #4f151b;
+    color: #311514;
   }
   footer {
     width: 100%;
@@ -369,7 +374,7 @@ a:visited {
     clear: both;
     padding: 0;
   }
-  .row1 nav ul.mobile li {
+  .row1 nav .nav-list li {
     float: none;
     padding: 0;
     border: none;
@@ -377,7 +382,7 @@ a:visited {
     padding: 20px;
     margin-right: 40px;
   }
-  .row1 nav ul.mobile li li a {
+  .row1 nav .nav-list li li a {
     text-decoration: none;
   }
   .home-out {

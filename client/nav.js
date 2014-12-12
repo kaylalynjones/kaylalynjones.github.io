@@ -11,20 +11,8 @@
     });
 
     $('.nav').prepend($('<div class="nav-mobile"></div>'));
-    var $position = $('.nav-list').position();
-
     $('.nav-mobile').click(function(){
-      $('.nav-list').toggle();
-
-      $('.row1').removeClass('large');
-      $('.row1').removeClass('small');
-      $('.nav-list').addClass('mobile');
-      if($position.top === 0){
-        $('.nav-list').addClass('home-out');
-      } else {
-        $('#content').addClass('home-in');
-      }
-
+      $('.nav-list').slideToggle();
     });
   });
 
