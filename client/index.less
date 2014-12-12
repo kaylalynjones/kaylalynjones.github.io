@@ -78,8 +78,28 @@ a:focus {
 a:visited {
   color: @medred;
 }
+//progress bars-------------------------------
+progress {
+  margin: 0 0 15px 0;
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+  border-radius: 10px;
+  color: @teal !important;
+}
+progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+  border-radius: 10px;
 
-
+}
+progress::-webkit-progress-value {
+  background-color: @teal !important;
+  border-radius: 10px;
+}
+progress::-moz-progress-bar {
+  margin-left: 10px;
+  background: @teal;
+}
 @media (min-width: 769px) {
   //landing page-------------------------------
   .row1.large {
@@ -218,7 +238,6 @@ a:visited {
 
       img {
         max-width: 260px;
-        /* height: 300px; */
         width: 100%;
       }
     }
@@ -226,7 +245,24 @@ a:visited {
     .left {
       background-color: @medred;
       .skills {
-        display: none;
+        .list, .val, .padding {
+          width: 100%/3;
+        }
+        .list, .val {
+          float: left;
+          margin-left: 10px;
+
+        }
+        .padding {
+          float: right;
+        }
+        h3 {
+        }
+        p {
+          text-align: right;
+          margin: 0 0 18px 0;
+        }
+
       }
     }
 
@@ -235,10 +271,13 @@ a:visited {
       .top-half {
         height: 200px;
         color: @red;
+        h3 {
+          color: #D3D3D3;
+        }
 
         img{
           width: 345px;
-          height: 200px;
+          height: 100px;
         }
 
       }
@@ -262,7 +301,17 @@ a:visited {
       background-color: @medred;
 
       .interests {
-        display: none;
+        .list, .val, .padding {
+          width: 100%/2;
+        }
+        .list, .val {
+          float: left;
+
+        }
+        p {
+          text-align: right;
+          margin: 0 0 18px 0;
+        }
       }
     }
   }
@@ -289,6 +338,7 @@ a:visited {
       display: block;
       padding: 0 20px 5px;
       margin: 0;
+      text-align: center;
 
       li:first-child {
         width: 50px;
@@ -297,10 +347,8 @@ a:visited {
       }
       li {
         padding: 15px;
-        font-size: 18px;
         display: inline-block;
-        font-size: 26px;
-        //width: 100%/5;
+        font-size: 22px;
         border-top: 5px solid @offwhite;
       }
       li:hover {
@@ -391,7 +439,13 @@ a:visited {
     margin: 0 10px;
   }
 }
+.games {
+  max-width: 100%;
+  width: 100%;
+}
 //<<<<--------------------------------------
+
+
 
 @media (max-width: 768px) {
   //Responsive NAV >>-----------------------
@@ -448,23 +502,11 @@ a:visited {
       }
     }
   }
-  .home-out {
-    -webkit-animation-name: fadeOut;
-  }
-  .home-in {
-    -webkit-animation-name: fadeIn;
-  }
-  @-webkit-keyframes fadeIn {
-    0%      { opacity: .2; -webkit-transform: translateY(100px); }
-    100% { opacity: 1; -webkit-transform: translateY(0%); }
-  }
-
-  @-webkit-keyframes fadeOut {
-    0%      { opacity: 1; -webkit-transform: translateY(0%); }
-    100% { opacity: .2; -webkit-transform: translateY(100px) }
-  }
   // End Responsive NAV >>-----------------------
 }
+
+
+
 @media (max-width: 768px) {
   body {
     background-image: none;

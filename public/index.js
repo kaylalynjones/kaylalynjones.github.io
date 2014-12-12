@@ -8,7 +8,9 @@ var smoothScroll, FastClick;
     .when('/games', {templateUrl:'public/views/games/games.html', controller:'GameCtrl'})
     .when('/mean', {templateUrl:'public/views/mean/mean.html', controller:'MeanCtrl'})
     .when('/node', {templateUrl:'public/views/node/node.html', controller:'NodeCtrl'})
-    .when('/mobile', {templateUrl:'public/views/mobile/mobile.html', controller:'MobileCtrl'});
+    .when('/mobile', {templateUrl:'public/views/mobile/mobile.html', controller:'MobileCtrl'})
+    .when('/featured', {templateUrl:'public/views/featured/featured.html', controller:'FeatureCtrl'})
+    .when('/hack', {templateUrl:'public/views/hack/hack.html', controller:'HackCtrl'});
   }]);
   //smooth scrolling------------------------------------------------------------
   smoothScroll.init({
