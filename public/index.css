@@ -259,7 +259,8 @@ a:visited {
     font-size: 26px;
     border-top: 5px solid #f2f2f2;
   }
-  .row5 ul li:hover {
+  .row5 ul li:hover,
+  .row5 ul li.active {
     border-top: 5px solid #007c72;
     background-color: #ffffff;
   }

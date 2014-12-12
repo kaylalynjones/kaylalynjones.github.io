@@ -23,7 +23,7 @@ var smoothScroll, FastClick;
   window.addEventListener('load', function(){
     FastClick.attach(document.body);
   }, false);
-  //-------------------
+  //Shrink on Scroll------------------------------------------------------------
   function init(){
     window.addEventListener('scroll', function(e){
       var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -39,4 +39,9 @@ var smoothScroll, FastClick;
     });
   }
   window.onload = init();
+  //Show View on tabs-----------------------------------------------------------
+  $('.tabs > li').on('click', function(e){
+    $('.tabs > li').removeClass('active');
+    $(this).addClass('active');
+  });
 })();
