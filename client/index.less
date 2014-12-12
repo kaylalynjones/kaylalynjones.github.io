@@ -62,21 +62,41 @@ body {
   h5 {
     font-size: 1.5em;
   }
+
+  img.desaturate {
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+  }
+  img.desaturate:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none;
+
+  }
 }
 //link effects-------------------------------
 a {
   color: @medred;
 }
 a:hover {
-  color: @teal;
-  //border-bottom: 2px solid @teal;
+  color: @teal !important;
 }
 a:focus {
   color: @teal;
-  //border-bottom: 2px solid @teal;
 }
 a:visited {
   color: @medred;
+}
+//footer links
+#contact a:hover, footer a:hover {
+  color: @tan !important;
+}
+#contact a:focus, footer a:focus {
+  color: @tan;
 }
 
 
@@ -91,6 +111,7 @@ a:visited {
     background-color: @white;
     top: 0;
     border-bottom: 2px solid @grey;
+    z-index: 1000;
 
     img {
       position: relative;
@@ -144,6 +165,7 @@ a:visited {
     background-color: @white;
     top: 0;
     border-bottom: 2px solid @grey;
+    z-index: 1000;
 
     img {
       position: relative;
@@ -368,7 +390,7 @@ a:visited {
 
       .icon {
         color: @medred;
-        width:100%/5;
+        width:100%/4;
         display: inline-block;
         text-align: center;
         margin-top: 50px;
@@ -421,6 +443,8 @@ a:visited {
     background-color: @white;
     top: 0;
     border-bottom: 2px solid @grey;
+    z-index: 1000;
+
 
     img {
       position: relative;
@@ -598,6 +622,12 @@ a:visited {
         h4 {
           margin: 5px;
         }
+        a:hover {
+          color: @teal !important;
+        }
+        a:focus {
+          color: @teal;
+        }
       }
     }
     footer{
@@ -606,6 +636,12 @@ a:visited {
 
       .social {
         padding: 10px;
+        a:hover {
+          color: @teal !important;
+        }
+        a:focus {
+          color: @teal;
+        }
       }
 
       .icon {
