@@ -7,7 +7,8 @@ module.exports = function(grunt){
       main: {
         options: {
           port: 9001,
-          base: '.'
+          base: '.',
+          debug: true
         }
       }
     },
