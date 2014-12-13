@@ -601,6 +601,7 @@ progress::-moz-progress-bar {
     width: 100%;
     display: block;
     margin: 0 auto;
+    margin-top: 40px;
   }
   .row5 .small-screen .intro {
     padding: 10px;
