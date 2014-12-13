@@ -15,19 +15,6 @@
   border-left: 1px solid #e2e2e2;
   height: 620px;
 }
-.node1 h4,
-.node2 h4,
-.node3 h4 {
-  font-weight: 700;
-  color: #842128;
-}
-.node1 img,
-.node2 img,
-.node3 img {
-  width: 300px;
-  height: 340px;
-  border: 2px solid #DFDEDE;
-}
 .node1 .tag,
 .node2 .tag,
 .node3 .tag {

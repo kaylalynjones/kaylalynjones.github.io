@@ -354,6 +354,15 @@ progress::-moz-progress-bar {
   main #container {
     background-color: #ffffff;
   }
+  main #container h5 {
+    font-weight: 700;
+    color: #842128;
+  }
+  main #container img {
+    max-width: 300px;
+    width: 100%;
+    border: 2px solid #DFDEDE;
+  }
   .row6 {
     height: 600px;
   }
@@ -415,6 +424,17 @@ progress::-moz-progress-bar {
 .games {
   max-width: 100%;
   width: 100%;
+}
+@media (max-width: 960px) {
+  .row5 ul li {
+    font-size: 16px;
+  }
+  main #container h5 {
+    font-size: 1em;
+  }
+  main #container .hack2 {
+    padding: 10px;
+  }
 }
 @media (max-width: 768px) {
   .nav-list {

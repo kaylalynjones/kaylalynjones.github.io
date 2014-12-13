@@ -14,17 +14,6 @@
   border-left: 1px solid #e2e2e2;
   height: 620px;
 }
-.feature1 h4,
-.feature2 h4 {
-  font-weight: 700;
-  color: #842128;
-}
-.feature1 img,
-.feature2 img {
-  width: 300px;
-  height: 340px;
-  border: 2px solid #DFDEDE;
-}
 .feature1 .tag,
 .feature2 .tag {
   font-size: 16px;

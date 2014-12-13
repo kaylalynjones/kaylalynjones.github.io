@@ -15,19 +15,6 @@
   border-left: 1px solid #e2e2e2;
   height: 620px;
 }
-.mean1 h4,
-.mean2 h4,
-.mean3 h4 {
-  font-weight: 700;
-  color: #842128;
-}
-.mean1 img,
-.mean2 img,
-.mean3 img {
-  width: 300px;
-  height: 340px;
-  border: 2px solid #DFDEDE;
-}
 .mean1 .tag,
 .mean2 .tag,
 .mean3 .tag {

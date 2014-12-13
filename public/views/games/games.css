@@ -15,19 +15,6 @@
   border-left: 1px solid #e2e2e2;
   height: 620px;
 }
-.game1 h4,
-.game2 h4,
-.game3 h4 {
-  font-weight: 700;
-  color: #842128;
-}
-.game1 img,
-.game2 img,
-.game3 img {
-  width: 300px;
-  height: 340px;
-  border: 2px solid #DFDEDE;
-}
 .game1 .tag,
 .game2 .tag,
 .game3 .tag {

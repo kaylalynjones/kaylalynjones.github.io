@@ -402,6 +402,15 @@ progress::-moz-progress-bar {
 
     #container {
       background-color: @white;
+      h5 {
+        font-weight: @heavyfont;
+        color: @medred;
+      }
+      img {
+        max-width: 300px;
+        width: 100%;
+        border: 2px solid #DFDEDE;
+      }
     }
   }
   .row6 {
@@ -473,8 +482,28 @@ progress::-moz-progress-bar {
   width: 100%;
 }
 //<<<<--------------------------------------
+//<<<<--------------------------------------
 
+@media (max-width: 960px){
+  .row5 {
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+  main {
+    #container {
+      h5{
+        font-size: 1em
+      }
+      .hack2 {
+        padding: 10px;
+      }
+    }
+  }
 
+}
 
 @media (max-width: 768px) {
   //Responsive NAV >>-----------------------
@@ -535,8 +564,6 @@ progress::-moz-progress-bar {
   }
   // End Responsive NAV >>-----------------------
 }
-
-
 
 @media (max-width: 768px) {
   body {
