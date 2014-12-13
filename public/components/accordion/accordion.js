@@ -11,7 +11,8 @@
       link: function(scope, elem, attrs, fn){
         var $content = elem.find('.accordion-heading');
         $content.on('click', function(){
-          $(this).next().toggleClass('active');
+          $('.accordion-content').not($(this).next('.accordion-content')).slideUp();
+          $(this).next('.accordion-content').slideDown();
         });
       }
     };

@@ -101,65 +101,59 @@ html(ng-app='portfolio', lang='en')
         .icons-skill
           span.devicons.devicons-mongodb
     .row5(id='work')
+      // MOBILE PROJECT VIEW  ---------------------------------------------
       .small-screen
         hr
         h3 Portfolio 
         p For more info on these projects, view this page on a larger screen.
-        accordion(heading='Mean Apps')
+        
+        accordion(heading='Featured')
+          h6 Abode &nbsp;
+            a(href='https://github.com/kaylalynjones/abode'): i.fa.fa-github-alt.fa-2x
+          p Manage your maintenance and renovation goals.
+            section
+              img(src='public/assets/abode.png', alt='abode')
+        accordion(heading='Angular Apps')
           h6 EnlighTN &nbsp;
-            a(href='https://github.com/kaylalynjones/enlighTN', target="_blank"): i.fa.fa-github-alt.fa-2x
+            a(href='https://github.com/kaylalynjones/enlighTN'): i.fa.fa-github-alt.fa-2x
           p Explore Nashville like never before!
           section
             img(src='public/assets/enlighTN.png', alt='enlightn')
-          hr
-          h6 Abode &nbsp;
-            a(href='https://github.com/kaylalynjones/abode', target="_blank"): i.fa.fa-github-alt.fa-2x
-          p Manage your maintenance and renovation goals.
+          
+        accordion(heading='HackNashville6')
+          h6 NashvesTN &nbsp;
+            a(href='https://github.com/kaylalynjones/nashvesTN-mobile'): i.fa.fa-github-alt.fa-2x
+          p Connect with others and invest in their future.
           section
-            img(src='public/assets/abode.png', alt='abode')
-          //hr
-          //h6 NashvesTN
-          //p Connect with others and invest in their future.
-          //section
-            img(src='public/assets/nashvestn-desk.png', alt='nashvestn')
+            a(href='http://nashvestn.herokuapp.com/', target="_blank"): img(src='public/assets/nashvestn-desk.png', alt='nashvestn')
         
         accordion(heading='Node Apps')
           h6 World Traveler &nbsp;
-            a(href='https://github.com/kaylalynjones/world-traveler', target="_blank"): i.fa.fa-github-alt.fa-2x
+            a(href='https://github.com/kaylalynjones/world-traveler'): i.fa.fa-github-alt.fa-2x
           p Keep track of your world travels!
           section
             img(src='public/assets/world-traveler.png', alt='world traveler')
           hr
           h6 Hipsterbay &nbsp;
-            a(href='https://github.com/kaylalynjones/hipsterbay', target="_blank"): i.fa.fa-github-alt.fa-2x
+            a(href='https://github.com/kaylalynjones/hipsterbay'): i.fa.fa-github-alt.fa-2x
           p Barter for the next hot thing!  
           section
             img(src='public/assets/hipsterbay.png', alt='hipsterbay')     
-           
-          
-        //accordion(heading='Mobile Apps')
           
         accordion(heading='Phaser Games')
           h6 Equalizer &nbsp;
-            a(href='https://github.com/kaylalynjones/equalizer', target="_blank"): i.fa.fa-github-alt.fa-2x
+            a(href='https://github.com/kaylalynjones/equalizer'): i.fa.fa-github-alt.fa-2x
           p Demolish inequalities and collect your reward!
-          
-          
           section
             img(src='public/assets/equalizer.png', alt='equalizer')
-          //hr
-          //h6 Journey of Oscar Diggs
-          //p Help Oscar Diggs find his ballon ride to Oz!
-            section
-              img(src='public/assets/oz.png', alt='oz')
           hr
           h6 Mr. Whaleface &nbsp;
-            a(href='https://github.com/kaylalynjones/mr-whaleface', target="_blank"): i.fa.fa-github-alt.fa-2x
+            a(href='https://github.com/kaylalynjones/mr-whaleface'): i.fa.fa-github-alt.fa-2x
           p Help Mr. Whaleface navigate the dangerous sea!
             section
-              img(src='public/assets/mr-whaleface.png', alt='mr-whaleface')
-                        
-              
+              a(href='http://portfolio.kaylalynjones.ninja/mr-whaleface/'): img(src='public/assets/mr-whaleface.png', alt='mr-whaleface')
+              // end of mobile project view  ----------------------------------
+              // large screen project view  -----------------------------------
       ul.large-screen.tabs
         li.active: a(href='#'): i.fa.fa-crosshairs
         li: a(href='#/featured') Featured
