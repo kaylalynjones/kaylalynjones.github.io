@@ -67,6 +67,9 @@ a:hover {
 a:focus {
   color: #00a99d;
 }
+a:active {
+  color: #00a99d;
+}
 a:visited {
   color: #842128;
 }
@@ -216,21 +219,12 @@ progress::-moz-progress-bar {
     overflow: hidden;
     height: 400px;
   }
-  .row3 #chartdiv {
-    width: 100%;
-    height: 400px;
-    z-index: -1;
-  }
   .row3 section {
     width: 33.33333333%;
     float: left;
     padding: 30px 10px 0;
     height: 400px;
     text-align: center;
-  }
-  .row3 section img {
-    max-width: 260px;
-    width: 100%;
   }
   .row3 .left {
     background-color: #842128;
@@ -522,55 +516,71 @@ progress::-moz-progress-bar {
     color: #a38d7a;
     text-align: center;
   }
-  .row3 .left {
+  .row3 .left,
+  .row3 .right {
     text-align: left;
     margin: 20px;
+    overflow: auto;
   }
-  .row3 .left img {
+  .row3 .left img,
+  .row3 .right img {
     display: none;
   }
-  .row3 .left .skills {
-    display: flex;
+  .row3 .left .skills,
+  .row3 .right .skills,
+  .row3 .left .interests,
+  .row3 .right .interests {
+    display: block;
+    overflow: visible;
   }
-  .row3 .left .skills ul {
-    padding: 20px;
-    font-size: 25px;
-    width: 100%;
-    background-color: #ffffff;
-    border: 2px solid #f2f2f2;
-  }
-  .row3 .left .skills ul li:first-child {
-    font-weight: bold;
+  .row3 .left .skills h3,
+  .row3 .right .skills h3,
+  .row3 .left .interests h3,
+  .row3 .right .interests h3 {
     text-align: center;
   }
+  .row3 .left .skills .list,
+  .row3 .right .skills .list,
+  .row3 .left .interests .list,
+  .row3 .right .interests .list,
+  .row3 .left .skills .val,
+  .row3 .right .skills .val,
+  .row3 .left .interests .val,
+  .row3 .right .interests .val {
+    float: left;
+  }
+  .row3 .left .skills .list,
+  .row3 .right .skills .list,
+  .row3 .left .interests .list,
+  .row3 .right .interests .list {
+    width: 33.3333%;
+  }
+  .row3 .left .skills .list p,
+  .row3 .right .skills .list p,
+  .row3 .left .interests .list p,
+  .row3 .right .interests .list p {
+    margin: 0 0 18px 0;
+    text-align: right;
+    padding-right: 15px;
+  }
+  .row3 .left .skills .val,
+  .row3 .right .skills .val,
+  .row3 .left .interests .val,
+  .row3 .right .interests .val {
+    width: 66.66666%;
+  }
+  .row3 .middle {
+    clear: both;
+  }
+  .row3 .middle .top-half h3,
   .row3 .middle .top-half img {
     display: none;
   }
   .row3 .middle .bottom-half {
+    padding: 10px;
     font-size: 40px;
     text-align: center;
     color: #4f151b;
-  }
-  .row3 .right {
-    text-align: left;
-    margin: 20px;
-  }
-  .row3 .right img {
-    display: none;
-  }
-  .row3 .right .interests {
-    display: flex;
-  }
-  .row3 .right .interests ul {
-    padding: 20px;
-    font-size: 25px;
-    width: 100%;
-    background-color: #ffffff;
-    border: 2px solid #f2f2f2;
-  }
-  .row3 .right .interests ul li:first-child {
-    font-weight: bold;
-    text-align: center;
   }
   .row4 {
     display: none;
@@ -620,6 +630,9 @@ progress::-moz-progress-bar {
     color: #00a99d !important;
   }
   footer .social a:focus {
+    color: #00a99d;
+  }
+  footer .social a:active {
     color: #00a99d;
   }
   footer .icon {

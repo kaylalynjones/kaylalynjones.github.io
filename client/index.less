@@ -88,6 +88,9 @@ a:hover {
 a:focus {
   color: @teal;
 }
+a:active {
+  color: @teal;
+}
 a:visited {
   color: @medred;
 }
@@ -248,11 +251,6 @@ progress::-moz-progress-bar {
     overflow: hidden;
     height: 400px;
 
-    #chartdiv {
-      width: 100%;
-      height: 400px;
-      z-index: -1;
-    }
     section {
       width: 100%/3;
       float: left;
@@ -260,10 +258,6 @@ progress::-moz-progress-bar {
       height: 400px;
       text-align: center;
 
-      img {
-        max-width: 260px;
-        width: 100%;
-      }
     }
 
     .left {
@@ -275,18 +269,14 @@ progress::-moz-progress-bar {
         .list, .val {
           float: left;
           margin-left: 10px;
-
         }
         .padding {
           float: right;
-        }
-        h3 {
         }
         p {
           text-align: right;
           margin: 0 0 18px 0;
         }
-
       }
     }
 
@@ -316,7 +306,6 @@ progress::-moz-progress-bar {
         }
         h4 {
           font-size: 25px;
-
         }
       }
     }
@@ -604,64 +593,76 @@ progress::-moz-progress-bar {
     }
   }
   .row3 {
-    .left {
+
+    .left, .right {
       text-align: left;
       margin: 20px;
+      overflow: auto;
+
 
         img{
           display: none;
         }
-        .skills {
-          display: flex;
-          ul {
-            padding: 20px;
-            font-size: 25px;
-            width: 100%;
-            background-color: @white;
-            border: 2px solid @offwhite;
+        .skills, .interests {
+          display: block;
+          overflow: visible;
+          h3 {
+            text-align: center;
+          }
+          .list, .val {
+            float: left;
 
-            li:first-child{
-              font-weight: bold;
-              text-align: center;
+          }
+          .list {
+            width: 33.3333%;
+            p {
+              margin: 0 0 18px 0;
+              text-align: right;
+              padding-right: 15px;
             }
+          }
+          .val {
+            width: 66.66666%;
           }
         }
       }
       .middle{
+        clear: both;
         .top-half{
-          img {
+          h3, img {
             display: none;
           }
         }
         .bottom-half {
+          padding: 10px;
           font-size: 40px;
           text-align: center;
           color: @dkred;
         }
       }
-      .right{
-        text-align: left;
-        margin: 20px;
-
-        img{
-          display: none;
-        }
-        .interests {
-          display: flex;
-          ul {
-            padding: 20px;
-            font-size: 25px;
-            width: 100%;
-            background-color: @white;
-            border: 2px solid @offwhite;
-
-            li:first-child {
-              font-weight: bold;
-              text-align: center;
-            }
-          }
-        }
-      }
+      // .right{
+      //   text-align: left;
+      //   margin: 20px;
+      //
+      //   img{
+      //     display: none;
+      //   }
+      //   .interests {
+      //     display: flex;
+      //     ul {
+      //       padding: 20px;
+      //       font-size: 25px;
+      //       width: 100%;
+      //       background-color: @white;
+      //       border: 2px solid @offwhite;
+      //
+      //       li:first-child {
+      //         font-weight: bold;
+      //         text-align: center;
+      //       }
+      //     }
+      //   }
+      // }
     }
     .row4 {
       display: none;
@@ -715,6 +716,9 @@ progress::-moz-progress-bar {
           color: @teal !important;
         }
         a:focus {
+          color: @teal;
+        }
+        a:active {
           color: @teal;
         }
       }
