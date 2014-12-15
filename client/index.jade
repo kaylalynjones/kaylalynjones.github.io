@@ -29,7 +29,7 @@ html(ng-app='portfolio', lang='en')
           li.nav-item: a(data-scroll, href='#contact') Contact
           li.nav-item: a(href='public/assets/kayla_jones_resume.pdf', target='_blank') Resume
     .row#container
-      div(ui-view)
+      div(ui-view="home")
 
         
     script(type='application/javascript', src='bower_components/fastclick/lib/fastclick.js')  
@@ -41,6 +41,7 @@ html(ng-app='portfolio', lang='en')
     script(src='public/index.js')
     script(src='public/nav.js')
     script(src='public/views/home/home.js')
+    script(src='public/views/project/project.js')
     script(src='public/views/work/work.js')
     script(src='public/views/games/games.js')
     script(src='public/views/node/node.js')

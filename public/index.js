@@ -6,16 +6,64 @@ var smoothScroll, FastClick;
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
+
     $stateProvider
-    .state('home',     {url:'/',        templateUrl:'public/views/home/home.html', controller:'HomeCtrl'})
-    .state('project',     {url:'',      abstract:true})
-    .state('home.games',     {url:'games',        templateUrl:'public/views/games/games.html', controller:'GameCtrl'})
-    .state('project.mean',      {url:'/mean',         templateUrl:'public/views/mean/mean.html',  controller:'MeanCtrl'})
-    .state('project.node', {url:'/node', templateUrl:'public/views/node/node.html',         controller:'NodeCtrl'})
-    .state('project.mobile', {url:'/mobile', templateUrl:'public/views/mobile/mobile.html',         controller:'MobileCtrl'})
-    .state('project.featured', {url:'/featured', templateUrl:'public/views/featured/featured.html',         controller:'FeatureCtrl'})
-    .state('project.hack', {url:'/hack', templateUrl:'public/views/hack/hack.html',         controller:'HackCtrl'});
-    //.state('work', {url:'/work', templateUrl: 'public/views/work/work.html', controller:'WorkCtrl'});
+    .state('home', {
+      url: '/',
+      views: {
+        'home': {
+          templateUrl : 'public/views/home/home.html',
+          controller: 'HomeCtrl'
+        },
+        'project': {
+          templateUrl: 'public/views/project.html'
+        }
+      }
+    })
+    .state('home.featured', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/featured/featured.html'
+        }
+      }
+    })
+    .state('home.hack', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/hack/hack.html'
+        }
+      }
+    })
+    .state('home.node', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/node/node.html'
+        }
+      }
+    })
+    .state('home.mean', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/mean/mean.html'
+        }
+      }
+    })
+    .state('home.games', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/games/games.html'
+        }
+      }
+    })
+    .state('project', {
+      url: '/project/:name',
+      views: {
+        'home': {
+          templateUrl : 'public/views/project/project.html',
+          controller: 'ProjectCtrl'
+        }
+      }
+    });
   }]);
   //smooth scrolling------------------------------------------------------------
   smoothScroll.init({

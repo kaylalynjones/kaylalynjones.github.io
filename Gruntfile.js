@@ -77,7 +77,7 @@ module.exports = function(grunt){
     copy: {
       js: {
         cwd: 'client',
-        src: ['**/*.js'],
+        src: ['**/*.js', '**/*.json'],
         dest: 'public',
         expand: true
       },
