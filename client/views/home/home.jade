@@ -1,0 +1,164 @@
+.row2
+  header
+    h1 Hi, I'm Kayla Jones.
+    h4 Web Designer + Developer
+.about
+  h4 I create beautiful digital experiences that merge functionality and design.
+.row3
+  section.left
+    .skills
+      h3 Skills
+      .list
+        p Html/Jade 
+        p SASS/LESS 
+        p CSS3 
+        p jQuery
+        p Javascript
+        p AngularJS
+      .val
+        progress(value="95" max="100")
+        progress(value="90" max="100")
+        progress(value="75" max="100")
+        progress(value="70" max="100")
+        progress(value="80" max="100")
+        progress(value="75" max="100")
+  section.middle
+    .top-half
+      h3 Toolbox
+      img(src='public/assets/toolbox_notitle.png')
+    .bottom-half
+      span.devicons.devicons-npm
+      span.devicons.devicons-github_alt
+      span.devicons.devicons-grunt
+      span.devicons.devicons-gulp
+      span.devicons.devicons-bower
+      span.devicons.devicons-trello
+  section.right
+    .interests
+      h3 Interests
+      .list
+        p UX
+        p UI Design
+        p Usability
+        p Illustration
+        p Painting
+        p Creativity
+      .val
+        progress(value="90" max="100")
+        progress(value="80" max="100")
+        progress(value="70" max="100")
+        progress(value="80" max="100")
+        progress(value="80" max="100")
+        progress(value="100" max="100")
+                                                                    
+.row4
+  aside
+    .icons-skill
+      span.devicons.devicons-html5
+    .icons-skill
+      span.devicons.devicons-css3
+    .icons-skill
+      span.devicons.devicons-sass
+    .icons-skill
+      span.devicons.devicons-less
+    .icons-skill
+      span.devicons.devicons-javascript
+    .icons-skill
+      span.devicons.devicons-nodejs
+    .icons-skill
+      span.devicons.devicons-angular
+    .icons-skill
+      span.devicons.devicons-mongodb
+.row5(id='work')
+  // MOBILE PROJECT VIEW  ---------------------------------------------
+  .small-screen
+    hr
+    img.port-icons(src='public/assets/portfolio_icons.png')
+    h3 Portfolio 
+    p For more information on these projects, view this page on a larger screen.
+                                                                                                                
+    accordion(heading='Featured')
+      .intro
+        h6 Abode &nbsp;
+          a(href='https://github.com/kaylalynjones/abode'): i.fa.fa-github-alt.fa-2x
+        p Manage your maintenance and renovation goals.
+      section
+        a(href='#/project/abode'): img(src='public/assets/abode.png', alt='abode')
+              
+    accordion(heading='Angular Apps')
+      .intro
+        h6 EnlighTN &nbsp;
+          a(href='https://github.com/kaylalynjones/enlighTN'): i.fa.fa-github-alt.fa-2x
+        p Explore Nashville like never before!
+      section
+        a(href='#/project/enlightn'): img(src='public/assets/enlighTN.png', alt='enlightn')
+                    
+    accordion(heading='HackNashville6')
+      .intro
+        h6 NashvesTN &nbsp;
+          a(href='https://github.com/kaylalynjones/nashvesTN-mobile'): i.fa.fa-github-alt.fa-2x
+        p Connect with others and invest in their future.
+      section
+        a(href='http://nashvestn.herokuapp.com/', target="_blank"): img(src='public/assets/nashvestn-desk.png', alt='nashvestn')
+              
+    accordion(heading='Node Apps')
+      .intro
+        h6 World Traveler &nbsp;
+          a(href='https://github.com/kaylalynjones/world-traveler'): i.fa.fa-github-alt.fa-2x
+        p Keep track of your world travels!
+      section
+        img(src='public/assets/world-traveler.png', alt='world traveler')
+                        
+      .intro
+        h6 Hipsterbay &nbsp;
+          a(href='https://github.com/kaylalynjones/hipsterbay'): i.fa.fa-github-alt.fa-2x
+        p Barter for the next hot thing!  
+      section
+        a(href='#/project/hipsterbay'): img(src='public/assets/hipsterbay.png', alt='hipsterbay')     
+                                                                                                                                                          
+    accordion(heading='Phaser Games')
+      .intro
+        h6 Equalizer &nbsp;
+          a(href='https://github.com/kaylalynjones/equalizer'): i.fa.fa-github-alt.fa-2x
+        p Demolish inequalities and collect your reward!
+      section
+        img(src='public/assets/equalizer.png', alt='equalizer')
+              
+      .intro
+        h6 Mr. Whaleface &nbsp;
+          a(href='https://github.com/kaylalynjones/mr-whaleface'): i.fa.fa-github-alt.fa-2x
+        p Help Mr. Whaleface navigate the dangerous sea!
+      section
+        a(href='http://portfolio.kaylalynjones.ninja/mr-whaleface/'): img(src='public/assets/mr-whaleface.png', alt='mr-whaleface')                                                                                                                                  
+  ul.large-screen.tabs
+    li.active: a(href='#'): i.fa.fa-crosshairs
+    li: a(ui-sref='home.featured') Featured
+    li: a(ui-sref='home.hack') HackNashville6
+    li: a(ui-sref='home.node') NodeJS Apps
+    li: a(ui-sref='home.mean') Angular Apps
+    li: a(ui-sref='home.games') Phaser Games
+    //li: a(ui-sref='home.mobile') Mobile Apps
+main
+  #container(ui-view='project')
+    
+.row7
+  section(id='contact')
+    h4 Let's talk.
+    a.needsclick(href='mailto:kaylalyne424@gmail.com'): i.fa.fa-envelope-o.fa-3x 
+footer                      
+  .social
+    .icon                          
+      a.needsclick(href='https://github.com/kaylalynjones'): i.fa.fa-github-alt.fa-5x 
+    .icon
+      a.needsclick(href='https://twitter.com/grandtraipse'): i.fa.fa-twitter.fa-5x
+    .icon
+      a.needsclick(href='https://medium.com/@grandtraipse'): i.fa.fa-bullhorn.fa-5x
+    .icon
+      a.needsclick(href='https://www.linkedin.com/profile/view?id=354920624&trk=nav_responsive_tab_profile_pic'): i.fa.fa-linkedin.fa-5x
+                                  
+                                  
+                                    
+  .signature
+    i.fa.fa-copyright &nbsp; 
+    small Kayla Lyn Jones
+                                                                                                                                                                                                                  

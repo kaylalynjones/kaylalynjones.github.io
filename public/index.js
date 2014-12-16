@@ -2,17 +2,68 @@ var smoothScroll, FastClick;
 
 (function(){
   'use strict';
-  angular.module('portfolio', ['ngRoute'])
-  .config(['$routeProvider', function($routeProvider){
-    $routeProvider
-    .when('/games',           {templateUrl:'public/views/games/games.html',       controller:'GameCtrl'})
-    .when('/mean',            {templateUrl:'public/views/mean/mean.html',         controller:'MeanCtrl'})
-    .when('/node',            {templateUrl:'public/views/node/node.html',         controller:'NodeCtrl'})
-    .when('/mobile',          {templateUrl:'public/views/mobile/mobile.html',     controller:'MobileCtrl'})
-    .when('/featured',        {templateUrl:'public/views/featured/featured.html', controller:'FeatureCtrl'})
-    .when('/hack',            {templateUrl:'public/views/hack/hack.html',         controller:'HackCtrl'})
-    .when('/work/hipsterbay', {templateUrl:'public/views/work/hipsterbay.html',   controller:'WorkCtrl'})
-    .otherwise({redirectTo:'/'});
+  angular.module('portfolio', ['ui.router'])
+  .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+    $urlRouterProvider.otherwise('/');
+
+
+    $stateProvider
+    .state('home', {
+      url: '/',
+      views: {
+        'home': {
+          templateUrl : 'public/views/home/home.html',
+          controller: 'HomeCtrl'
+        },
+        'project': {
+          templateUrl: 'public/views/project.html'
+        }
+      }
+    })
+    .state('home.featured', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/featured/featured.html'
+        }
+      }
+    })
+    .state('home.hack', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/hack/hack.html'
+        }
+      }
+    })
+    .state('home.node', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/node/node.html'
+        }
+      }
+    })
+    .state('home.mean', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/mean/mean.html'
+        }
+      }
+    })
+    .state('home.games', {
+      views: {
+        'project': {
+          templateUrl: 'public/views/games/games.html'
+        }
+      }
+    })
+    .state('project', {
+      url: '/project/:name',
+      views: {
+        'home': {
+          templateUrl : 'public/views/project/project.html',
+          controller: 'ProjectCtrl'
+        }
+      }
+    });
   }]);
   //smooth scrolling------------------------------------------------------------
   smoothScroll.init({

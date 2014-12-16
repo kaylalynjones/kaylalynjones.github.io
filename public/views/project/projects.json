@@ -1,0 +1,20 @@
+[{
+  "name":"Abode",
+  "type":"mean",
+  "technology": ["Express", "Node", "MongoDB", "AngularJS", "Socket.IO", "Less", "Jade"],
+  "info":"Lorem Ipsum Dipsum"
+},{
+  "name":"Enlightn",
+  "type":"mean",
+  "technology": ["Express", "Node", "MongoDB", "AngularJS", "Socket.IO", "Less", "Jade"],
+  "info":"Lorem Ipsum Dipsum",
+  "group":["Brian Hiatt", "Kayla Jones", "Liza Carter", "Shruti Sharma", "Zoe Ames"],
+  "tasks":["User Interface Design", "User Experience", "Frontend Development"]
+},{
+  "name":"Hipsterbay",
+  "type":"node",
+  "technology": ["Express", "Node", "MongoDB", "Less", "Jade"],
+  "info":"Lorem Ipsum Dipsum",
+  "group":["Dave Boling", "Kayla Jones", "Shruti Sharma", "Dennis Stanley"],
+  "tasks":["Project Manager", "User Interface Design", "User Experience", "Frontend Development"]
+}]

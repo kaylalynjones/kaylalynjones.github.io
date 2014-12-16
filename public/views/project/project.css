@@ -1,0 +1,92 @@
+.project-info {
+  background-color: white;
+  padding-top: 100px;
+  overflow: auto;
+  max-width: 1400px;
+  width: 100%;
+  height: 700px;
+  border-bottom: 2px solid #eee;
+}
+.info {
+  width: 33.333%;
+  float: left;
+  margin: 0;
+  padding: 20px;
+}
+.info h1 {
+  color: #842128;
+  margin: 10px;
+}
+.info h1 .link {
+  float: right;
+}
+.info p {
+  margin: 10px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+.info ul {
+  padding: 0;
+}
+.info ul > li.tags {
+  display: inline-block;
+  margin: 10px;
+  color: #007C72;
+  font-size: 18px;
+}
+.info .responsibilities h4 {
+  font-weight: bolder;
+}
+.info .responsibilities h4,
+.info .responsibilities h5 {
+  display: inline;
+  margin: 10px;
+}
+.info .team {
+  padding-top: 20px;
+  padding: 5px;
+}
+.info .team p {
+  margin: 20px 0 10px;
+}
+.info .team .group {
+  display: inline;
+}
+.info .github p {
+  margin: 7px;
+}
+.info .github p > a:hover,
+.info .github p > a:focus,
+.info .github p > a:active {
+  text-decoration: underline;
+}
+.pic {
+  width: 66.666%;
+  float: right;
+  margin: 0;
+}
+.pic img {
+  max-width: 960px;
+  width: 100%;
+}
+.clearfix {
+  clear: both;
+}
+@media (max-width: 960px) {
+  .info {
+    width: 50%;
+  }
+  .pic {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    width: 100%;
+    float: none;
+  }
+  .pic {
+    width: 100%;
+    float: none;
+  }
+}

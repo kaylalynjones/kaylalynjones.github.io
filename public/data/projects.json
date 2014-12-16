@@ -1,0 +1,31 @@
+[{
+  "name":"Abode",
+  "type":"mean",
+  "technology": ["Express", "Node", "MongoDB", "AngularJS", "Socket.IO", "Less", "Jade"],
+  "info":"For the mid-session Capstone project at NSS, I used the MEAN Stack, Twitter API and Socket.IO to create an application for ambitious homeowners to manage their renovation goals and inspirations.",
+  "pic":"abode_screen.png",
+  "url":"https://abode-kaylalynjones.herokuapp.com/#/",
+  "github":"https://github.com/kaylalynjones/abode"
+},
+{
+  "name":"Enlightn",
+  "type":"mean",
+  "technology": ["Express", "Node", "MongoDB", "AngularJS", "Socket.IO", "Less", "Jade", "Bootstrap"],
+  "info":"Using publicly available data on the installation and performance art in Nashville from various sources such as nashville.data.gov. We utilized the MEAN Stack, Twitter API, Socket.IO, and Geolocation to offer a comprehensive one stop view for all Metro Art and Historical Markers",
+  "group":["Brian Hiatt", "Liza Carter", "Shruti Sharma", "Zoe Ames"],
+  "tasks":["User Interface Design", "User Experience", "Frontend Development"],
+  "pic":"enlightn_screen.png",
+  "url":"http://enlightn.kaylalynjones.ninja/",
+  "github":"https://github.com/kaylalynjones/enlighTN"
+},
+{
+  "name":"Hipsterbay",
+  "type":"node",
+  "technology": ["Express", "Node", "MongoDB", "Less", "Jade", "Bootstrap", "jQuery"],
+  "info":"A modern bartering application built on NodeJS.",
+  "group":["Dave Boling", "Shruti Sharma", "Dennis Stanley"],
+  "tasks":["Project Managment", "User Interface Design", "User Experience", "Frontend Development"],
+  "pic":"hipster_screen.png",
+  "url":"http://hipsterbay.kaylalynjones.ninja/",
+  "github":"https://github.com/kaylalynjones/hipsterbay"
+}]
