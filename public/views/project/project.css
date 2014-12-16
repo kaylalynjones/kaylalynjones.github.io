@@ -22,6 +22,8 @@
 }
 .info p {
   margin: 10px;
+  line-height: 22px;
+  letter-spacing: 1px;
 }
 .info ul {
   padding: 0;
@@ -42,13 +44,13 @@
 }
 .info .team {
   padding-top: 20px;
+  padding: 5px;
 }
 .info .team p {
-  margin: 7px;
+  margin: 20px 0 10px;
 }
 .info .team .group {
   display: inline;
-  margin: 7px;
 }
 .info .github p {
   margin: 7px;

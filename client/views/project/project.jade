@@ -12,7 +12,7 @@
             h5 {{task}}
         .team(ng-show='project.group')
           p Team: 
-          span.group(ng-repeat='teammate in project.group') {{teammate}}
+          span.group(ng-repeat='teammate in project.group') {{teammate}} &nbsp;
         .github
           p: a(href='{{project.github}}', target="_blank") See the code.
           
