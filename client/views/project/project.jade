@@ -1,12 +1,26 @@
-br
-br
-br
-br
-br
-br
-br
-br
-br
-{{projectUrl}}
-div(ng-include, src='{{projectUrl}}')
-h2 Projects
+.row.project-info
+    //loop thru the projects data set and create a bunch of divs which scroll horizontally.
+    .project
+      .info
+        h1 {{project.name}} 
+          a.link(href='{{project.url}}', target="_blank"): i.fa.fa-external-link
+        p {{project.info}}
+        ul
+          li.tags(ng-repeat='tech in project.technology') {{tech}}
+        .responsibilities(ng-show='project.tasks')
+          h4 Responsible For:
+          .tasks(ng-repeat='task in project.tasks')
+            h5 {{task}}
+        .team(ng-show='project.group')
+          p Team: 
+          span.group(ng-repeat='teammate in project.group') {{teammate}}
+        .github
+          p: a(href='{{project.github}}', target="_blank") See the code.
+          
+      .pic
+        img(ng-src='public/assets/{{project.pic}}')
+      .clearfix
+
+
+  
+    
