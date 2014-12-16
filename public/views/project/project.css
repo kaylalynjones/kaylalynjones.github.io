@@ -70,3 +70,21 @@
 .clearfix {
   clear: both;
 }
+@media (max-width: 960px) {
+  .info {
+    width: 50%;
+  }
+  .pic {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    width: 100%;
+    float: none;
+  }
+  .pic {
+    width: 100%;
+    float: none;
+  }
+}
